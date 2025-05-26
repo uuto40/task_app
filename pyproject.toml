@@ -4,10 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = []  # ← インストール対象のパッケージがないので空リスト
-# ここがポイント ↓
-[tool.poetry.package-mode]
-enabled = false
+packages = []
+
+# 🔧 ここで package-mode を無効にする
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.9"
